@@ -11,10 +11,12 @@ typedef struct print
 {
 char *specifier;
 int (*f)(va_list args);
-}prin_t;
+}print_t;
 
 int _putchar (char c);
-
+int print_char(va_list args);
+int print_str(va_list args);
+int print_pourcent(va_list args);
 
 
 
