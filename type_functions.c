@@ -53,3 +53,47 @@ int print_pourcent(va_list args)
 _putchar('%');
 return (1);
 }
+
+/**
+* print_pourcent - print a integrer
+* @args: va_list containing the argument to be printed (%)
+* Description: this function extracts a character from va_list end.
+* Return: number of digit
+*/
+
+int print_int(va_list args)
+{
+int num, count, temp, num_digits;
+char digits[11];
+num = va_arg(args, int);
+count = 0;
+if (num == 0)
+{
+_putchar('0')
+return (1);
+}
+if (num < 0)
+{
+_putchar('-');
+num = -num;
+count++;
+}
+temp = num;
+num_digits = 0;
+while (temp != 0)
+{
+temp /= 10;
+num_digits++;
+}
+for (temp = num; num_digits > 0; num_digits--)
+{
+digits[num_digits - 1] = (temp % 10) + '0';
+temp /= 10;
+}
+for (num_digits = 0; digits[num_digits] != '\0'; num_digits++)
+{
+_putchar(digits[num_digits]);
+count++;
+}
+return (count);
+}
