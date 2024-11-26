@@ -12,7 +12,7 @@ int print_char(va_list args)
 char c;
 c = va_arg(args, int);
 _putchar(c);
-return(1);
+return (1);
 }
 
 /**
@@ -27,7 +27,7 @@ int print_str(va_list args)
 char *s;
 int count = 0;
 s = va_arg(args, char *);
-if (s== NULL)
+if (s == NULL)
 {
 s = "(null)";
 }
@@ -51,5 +51,5 @@ int print_pourcent(va_list args)
 {
 (void)args;
 _putchar('%');
-return(1);
+return (1);
 }
