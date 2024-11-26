@@ -63,10 +63,9 @@ return (1);
 
 int print_int(va_list args)
 {
-int num, count, temp, num_digits;
-char digits[11];
-num = va_arg(args, int);
-count = 0;
+int num = va_arg(args, int);
+int divisor = 1000000000;
+int count = 0;
 if (num == 0)
 {
 _putchar('0');
@@ -78,21 +77,15 @@ _putchar('-');
 num = -num;
 count++;
 }
-temp = num;
-num_digits = 0;
-while (temp != 0)
+while (divisor > 0 && num / divisor == 0)
 {
-temp /= 10;
-num_digits++;
+divisor /= 10;
 }
-for (temp = num; num_digits > 0; num_digits--)
+while (divisor > 0)
 {
-digits[num_digits - 1] = (temp % 10) + '0';
-temp /= 10;
-}
-for (num_digits = 0; digits[num_digits] != '\0'; num_digits++)
-{
-_putchar(digits[num_digits]);
+_putchar((num / divisor) + '0');
+num %= divisor;
+divisor /= 10;
 count++;
 }
 return (count);
