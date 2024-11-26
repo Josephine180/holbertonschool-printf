@@ -69,7 +69,7 @@ num = va_arg(args, int);
 count = 0;
 if (num == 0)
 {
-_putchar('0')
+_putchar('0');
 return (1);
 }
 if (num < 0)
