@@ -12,7 +12,9 @@ print_t  print_t[] = {
 {"c", print_char},
 {"s", print_str},
 {"%", print_pourcent},
-{'\0', NULL}
+{"d", print_int},
+{"i", print_int},
+{NULL, NULL}
 };
 va_list args;
 int i = 0, count = 0, j, found = 0;
