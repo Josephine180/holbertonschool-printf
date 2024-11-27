@@ -92,10 +92,5 @@ return (result);
 int print_int(va_list args)
 {
 int num = va_arg(args, int);
-if (num == 0)
-{
-_putchar('0');
-return (1);
-}
 return (print_int_rec(num, 0));
 }
