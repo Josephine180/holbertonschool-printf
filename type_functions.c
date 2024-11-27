@@ -66,23 +66,27 @@ int num = va_arg(args, int);
 int count = 0;
 char buffer[50];
 int i = 0, temp, sign = 0, j;
+if (num == INT_MIN)
+{
+_putchar('-');
+_putchar('2');
+num = 147483648;
+}
+if (num == 0)
+{
+_putchar('0');
+return (1);
+}
 if (num < 0)
 {
 sign = 1;
 num = -num;
 }
-if (num == 0)
-{
-buffer[i++] = '0';
-}
-else
-{
 temp = num;
 while (temp > 0)
 {
 buffer[i++] = (temp % 10) + '0';
 temp /= 10;
-}
 }
 if (sign)
 {
@@ -95,4 +99,3 @@ count++;
 }
 return (count);
 }
-
