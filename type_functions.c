@@ -61,26 +61,18 @@ return (1);
  * Return: number of charactere
 */
 
-int print_int_rec(int num, int count)
+int print_int_rec(int num)
 {
-int result = 0;
+int count = 0;
 if (num < 0)
 {
-_putchar('-');
-count++;
+count += _putchar('-');
 num = -num;
 }
 if (num >= 10)
-{
-result = print_int_rec(num / 10, count);
-}
-else
-{
-result = count;
-}
-_putchar(num % 10 + '0');
-result++;
-return (result);
+count += print_int_rec(num / 10);
+count += _putchar(num % 10 + '0');
+return (count);
 }
 
 /**
@@ -92,5 +84,5 @@ return (result);
 int print_int(va_list args)
 {
 int num = va_arg(args, int);
-return (print_int_rec(num, 0));
+return (print_int_rec(num));
 }
