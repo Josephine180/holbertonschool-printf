@@ -16,13 +16,16 @@ print_t  print_t[] = {
 {NULL, NULL}
 };
 va_list args;
+if (format == NULL)
+return(-1);
 int i = 0, count = 0, j, found = 0;
 va_start(args, format);
 while (format[i] != '\0')
 {
-if (format[i] == '%')
+if (format[i] == '%' && format [i+1])
 {
 i++;
+j = 0;
 for (j = 0; print_t[j].specifier != NULL; j++)
 {
 if (format[i] == *print_t[j].specifier)
