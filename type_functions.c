@@ -53,3 +53,46 @@ int print_pourcent(va_list args)
 _putchar('%');
 return (1);
 }
+
+/**
+* print_int - print a int
+* @args: va_list containing argument to be printed (int)
+* Description: this function extracts a character from va_list end.
+* Return: number of int
+*/
+int print_int(va_list args)
+{
+int num = va_arg(args, int);
+int count = 0;
+char buffer[50];
+int i = 0, temp, sign = 0, j;
+if (num < 0)
+{
+sign = 1;
+num = -num;
+}
+if (num == 0)
+{
+buffer[i++] = '0';
+}
+else
+{
+temp = num;
+while (temp > 0)
+{
+buffer[i++] = (temp % 10) + '0';
+temp /= 10;
+}
+}
+if (sign)
+{
+buffer[i++] = '-';
+}
+for (j = i - 1; j >= 0; j--)
+{
+_putchar(buffer[j]);
+count ++;
+}
+return (count);
+}
+
