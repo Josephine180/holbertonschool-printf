@@ -63,18 +63,24 @@ return (1);
 
 int print_int_rec(int num, int count)
 {
+int result = 0;
 if (num < 0)
 {
 _putchar('-');
 count++;
 num = -num;
 }
-if (num == 0)
-return (count);
-count = print_int_rec(num / 10, count);
-_putchar((num % 10) + '0');
-count++;
-return (count);
+if (num >= 10)
+{
+result = print_int_rec(num / 10, count);
+}
+else
+{
+result = count;
+}
+_putchar(num % 10 + '0');
+result++;
+return (result);
 }
 
 /**
