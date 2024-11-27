@@ -36,7 +36,8 @@ break;
 if (!found)
 {
 _putchar('%');
-count++;
+_putchar(format[i]);
+count += 2;
 }
 }
 else
