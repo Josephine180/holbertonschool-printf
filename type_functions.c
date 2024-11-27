@@ -64,8 +64,15 @@ return (1);
 int print_int(va_list args)
 {
 int num = va_arg(args, int);
-int divisor = 1000000000;
 int count = 0;
+char buffer[50];
+int i = 0, temp, sign = 0, j;
+if (num == INT_MIN)
+{
+_putchar('-');
+_putchar('2');
+num = 147483648;
+}
 if (num == 0)
 {
 _putchar('0');
@@ -73,19 +80,22 @@ return (1);
 }
 if (num < 0)
 {
-_putchar('-');
+sign = 1;
 num = -num;
-count++;
 }
-while (divisor > 0 && num / divisor == 0)
+temp = num;
+while (temp > 0)
 {
-divisor /= 10;
+buffer[i++] = (temp % 10) + '0';
+temp /= 10;
 }
-while (divisor > 0)
+if (sign)
 {
-_putchar((num / divisor) + '0');
-num %= divisor;
-divisor /= 10;
+buffer[i++] = '-';
+}
+for (j = i - 1; j >= 0; j--)
+{
+_putchar(buffer[j]);
 count++;
 }
 return (count);

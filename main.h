@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <limits.h>
 
 int _printf(const char *format, ...);
 /**
@@ -12,7 +13,7 @@ int _printf(const char *format, ...);
 * @f: function link to show the type of argument
 */
 
-typedef struct print
+typedef struct print_t
 {
 char *specifier;
 int (*f)(va_list args);
@@ -23,7 +24,6 @@ int print_char(va_list args);
 int print_str(va_list args);
 int print_pourcent(va_list args);
 int print_int(va_list args);
-
 
 
 #endif

@@ -5,37 +5,34 @@
 * Description: printf print a character
 * Return: number of characters printed
 */
-
 int _printf(const char *format, ...)
 {
-print_t  print_t[] = {
-{"c", print_char},
-{"s", print_str},
-{"%", print_pourcent},
-{"i", print_int},
-{"d", print_int},
-{NULL, NULL}
-};
 va_list args;
-int i = 0, count = 0, j;
+int i = 0, count = 0, j, specifier_found = 0;
 va_start(args, format);
 while (format[i] != '\0')
 {
 if (format[i] == '%')
 {
 i++;
-for (j = 0; print_t[j].specifier != NULL; j++)
+if (format[i] == '\0')
 {
-if (format[i] == *print_t[j].specifier)
+break;
+}
+for (j = 0; printf_t[j].specifier != NULL; j++)
 {
-count += print_t[j].f(args);
+if (format[i] == *printf_t[j].specifier)
+{
+count += printf_t[j].f(args);
+specifier_found = 1;
 break;
 }
 }
-if (print_t[j].specifier == NULL)
+if (!specifier_found)
 {
 _putchar('%');
-count++;
+_putchar(format[i]);
+count += 2;
 }
 }
 else
