@@ -55,6 +55,29 @@ return (1);
 }
 
 /**
+ * print_int_rec - print recursion
+ * @num: number print
+ * @count: number charactere to print
+ * Return: number of charactere
+*/
+
+int print_int_rec(int num, int count)
+{
+if (num < 0)
+{
+_putchar('-');
+count++;
+num = -num;
+}
+if (num == 0)
+return (count);
+count = print_int_rec(num / 10, count);
+_putchar((num % 10) + '0');
+count++;
+return (count);
+}
+
+/**
 * print_int - print a int
 * @args: va_list containing argument to be printed (int)
 * Description: this function extracts a character from va_list end.
@@ -63,39 +86,10 @@ return (1);
 int print_int(va_list args)
 {
 int num = va_arg(args, int);
-int count = 0;
-char buffer[50];
-int i = 0, temp, sign = 0, j;
-if (num == INT_MIN)
-{
-_putchar('-');
-_putchar('2');
-num = 147483648;
-}
 if (num == 0)
 {
 _putchar('0');
 return (1);
 }
-if (num < 0)
-{
-sign = 1;
-num = -num;
-}
-temp = num;
-while (temp > 0)
-{
-buffer[i++] = (temp % 10) + '0';
-temp /= 10;
-}
-if (sign)
-{
-buffer[i++] = '-';
-}
-for (j = i - 1; j >= 0; j--)
-{
-_putchar(buffer[j]);
-count++;
-}
-return (count);
+return (print_int_rec(num, 0));
 }
