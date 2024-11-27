@@ -62,40 +62,26 @@ return (1);
 */
 int print_int(va_list args)
 {
-int num = va_arg(args, int);
+int i;
 int count = 0;
-char buffer[50];
-int i = 0, temp, sign = 0, j;
-if (num == INT_MIN)
+int n = va_arg(args, int);
+if (n < 0)
 {
-_putchar('-');
-_putchar('2');
-num = 147483648;
+count += _putchar('-');
 }
-if (num == 0)
+for (i = 1000000000; i > 0; i /= 10)
 {
-_putchar('0');
-return (1);
+if (n / i)
+{
+if ((n / i) % 10 < 0)
+count += _putchar(-(n / i % 10) + '0');
+else
+count += _putchar((n / i % 10) + '0');
 }
-if (num < 0)
+else if (n / i == 0 && i == 1)
 {
-sign = 1;
-num = -num;
+count += _putchar(n / i % 10 + '0');
 }
-temp = num;
-while (temp > 0)
-{
-buffer[i++] = (temp % 10) + '0';
-temp /= 10;
-}
-if (sign)
-{
-buffer[i++] = '-';
-}
-for (j = i - 1; j >= 0; j--)
-{
-_putchar(buffer[j]);
-count++;
 }
 return (count);
 }
