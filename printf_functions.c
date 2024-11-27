@@ -7,28 +7,29 @@
 */
 int _printf(const char *format, ...)
 {
+print_t  print_t[] = {
+{"c", print_char}, {"s", print_str}, {"%", print_pourcent},
+{"i", print_int}, {"d", print_int}, {NULL, NULL}
+};
 va_list args;
-int i = 0, count = 0, j, specifier_found = 0;
+int i = 0, count = 0, j;
 va_start(args, format);
-while (format[i] != '\0')
+while (format[i])
 {
 if (format[i] == '%')
 {
 i++;
-if (format[i] == '\0')
-{
+if (!format[i])
 break;
-}
-for (j = 0; printf_t[j].specifier != NULL; j++)
+for (j = 0; print_t[j].specifier; j++)
 {
-if (format[i] == *printf_t[j].specifier)
+if (format[i] == *print_t[j].specifier)
 {
-count += printf_t[j].f(args);
-specifier_found = 1;
+count += print_t[j].f(args);
 break;
 }
 }
-if (!specifier_found)
+if (!print_t[j].specifier)
 {
 _putchar('%');
 _putchar(format[i]);
