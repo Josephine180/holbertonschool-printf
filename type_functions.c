@@ -54,3 +54,39 @@ _putchar('%');
 return (1);
 }
 
+/**
+* print_pourcent - print a integrer
+* @args: va_list containing the argument to be printed (%)
+* Description: this function extracts a character from va_list end.
+* Return: number of digit
+*/
+
+int print_int(va_list args)
+{
+int num = va_arg(args, int);
+int divisor = 1000000000;
+int count = 0;
+if (num == 0)
+{
+_putchar('0');
+return (1);
+}
+if (num < 0)
+{
+_putchar('-');
+num = -num;
+count++;
+}
+while (divisor > 0 && num / divisor == 0)
+{
+divisor /= 10;
+}
+while (divisor > 0)
+{
+_putchar((num / divisor) + '0');
+num %= divisor;
+divisor /= 10;
+count++;
+}
+return (count);
+}
