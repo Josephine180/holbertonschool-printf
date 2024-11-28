@@ -69,7 +69,7 @@ if (num < 0)
 count += _putchar('-');
 num = -num;
 }
-if (num > 10)
+if (num >= 10)
 {
 count = print_int_rec(num / 10);
 }
