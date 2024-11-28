@@ -1,0 +1,103 @@
+% _printf(3)                          Programmer's Manual                          _printf(3)
+
+NAME
+       _printf - implementation of a simplified printf function
+
+SYNOPSIS
+       #include "main.h"
+
+       int _printf(const char *format, ...);
+
+DESCRIPTION
+       The function `_printf` is a custom implementation of the standard C `printf` function.
+       It formats and outputs a string to the standard output (stdout) based on the provided
+       format string, handling the following specifiers:
+
+       - 'c' : Prints a single character.
+       - 's' : Prints a string.
+       - '%' : Prints a literal percent sign ('%').
+       - 'i' : Prints a signed integer.
+       - 'd' : Prints a signed integer.
+
+       The function accepts a variable number of arguments, with each format specifier
+       corresponding to a specific type of argument.
+
+PARAMETERS
+       format
+           A string containing the characters to be printed, and optional format specifiers
+           that indicate how to format the subsequent arguments. Format specifiers are introduced
+           by the '%' character and are followed by a valid conversion character (e.g., 'c', 's', 'i').
+
+RETURN VALUE
+       The function returns the total number of characters printed (excluding the null byte).
+       If an unsupported format specifier is encountered, the percent sign and the invalid character
+       will be printed.
+
+DESCRIPTION OF SUPPORTED SPECIFIERS
+       - c: Prints a single character. The corresponding argument must be of type `char`.
+       - s: Prints a string. The corresponding argument must be of type `char*`. If the string
+         is `NULL`, the string "(null)" will be printed.
+       - %: Prints a literal percent sign ('%').
+       - i: Prints a signed integer. The corresponding argument must be of type `int`.
+       - d: Prints a signed integer. Identical to the 'i' specifier.
+
+FUNCTIONS IMPLEMENTED
+       _printf
+           The main function that processes the format string and invokes the appropriate function
+           for each supported specifier. It uses a `va_list` to handle the variable arguments.
+
+       print_char
+           Prints a single character. Used for the 'c' specifier.
+
+       print_str
+           Prints a string. Used for the 's' specifier.
+
+       print_pourcent
+           Prints a literal percent sign. Used for the '%' specifier.
+
+       print_int
+           Prints a signed integer. Used for both 'i' and 'd' specifiers.
+
+       print_num
+           A helper function that prints integers recursively.
+
+       _putchar
+           A helper function that writes a single character to standard output.
+
+EXAMPLES
+       _printf("Hello, world!\n");
+
+           Output:
+           Hello, world!
+
+       _printf("Character: %c\n", 'A');
+
+           Output:
+           Character: A
+
+       _printf("String: %s\n", "This is a test");
+
+           Output:
+           String: This is a test
+
+       _printf("Percent sign: %%\n");
+
+           Output:
+           Percent sign: %
+
+       _printf("Integer value: %i\n", 12345);
+
+           Output:
+           Integer value: 12345
+
+       _printf("Negative integer: %d\n", -12345);
+
+           Output:
+           Negative integer: -12345
+
+
+AUTHOR
+       Written by PIERRE JOSEPHINE and ROBLES CORENTIN.
+
+COCOPYRIGHT
+       Cocopyright (c) 2024. Holberton rights reserved.
