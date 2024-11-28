@@ -55,35 +55,34 @@ return (1);
 }
 
 /**
- * print_int_rec - print recursion
- * @num: number print
- * @count: number charactere to print
- * Return: number of charactere
+ * print_int - print number
+ * @args: variadic argument
+ * Return: number of integrer
 */
 
-int print_int_rec(int num, int count)
+int print_int(va_list args)
 {
+int num = va_arg(args, int);
+int count = 0;
 if (num < 0)
 {
 count += _putchar('-');
 num = -num;
 }
-if (num >= 10)
-{
-count = print_int_rec(num / 10, count);
-}
-count += _putchar(num % 10 + '0');
+count += print_num(num);
 return (count);
 }
 
 /**
-* print_int - print a int
-* @args: va_list containing argument to be printed (int)
-* Description: this function extracts a character from va_list end.
-* Return: number of int
+* print_num - recursive function
+* @num: parametre
+* Return: number of charactere
 */
-int print_int(va_list args)
+int print_num(unsigned int num)
 {
-int num = va_arg(args, int);
-return (print_int_rec(num, 0));
+int count = 0;
+if (num / 10 > 0)
+count += print_num(num / 10);
+count += _putchar((num % 10) + '0');
+return (count);
 }
