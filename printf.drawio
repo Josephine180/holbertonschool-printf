@@ -1,9 +1,369 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="24.9.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.3" pages="4">
   <diagram name="Page-1" id="OJklSMMj_uCsLVv_y_Kz">
-    <mxGraphModel>
+    <mxGraphModel dx="1194" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-1" value="DEBUT" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="330" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.45;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;fontColor=default;strokeColor=#0B4D6A;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="388.62" y="130.00000000000003" as="sourcePoint" />
+            <mxPoint x="389" y="181" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0B4D6A;" edge="1" parent="1" source="vdL3AkFQGkwldGhUwwLw-5" target="vdL3AkFQGkwldGhUwwLw-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-4" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];strokeColor=#BAC8D3;fontColor=#EEEEEE;fillColor=#09555B;" vertex="1" connectable="0" parent="vdL3AkFQGkwldGhUwwLw-3">
+          <mxGeometry x="0.02" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-5" value="Definir la structure print dans le fichier main.h :&lt;div&gt;-specifier = char&lt;/div&gt;&lt;div&gt;-print_fonction = pointeur vers une fonction&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="290" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0B4D6A;" edge="1" parent="1" source="vdL3AkFQGkwldGhUwwLw-7" target="vdL3AkFQGkwldGhUwwLw-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-7" value="définir les librairies (stdio, stdarg, stdlib etc...)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-8" value="définition des fonctions à utiliser (putchar = imprimer caractère)&lt;div&gt;(strlen = nombre de caractère imprimé)&lt;/div&gt;&lt;div&gt;()&lt;/div&gt;&lt;div&gt;()&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="325" y="510" width="130" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-9" value="définition de la fonction :&lt;div&gt;int _printf(const char *format, ...)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vdL3AkFQGkwldGhUwwLw-10" value="main.h" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C73500;fontColor=#000000;fillColor=#fa6800;" vertex="1" parent="1">
+          <mxGeometry x="630" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Page-4" id="ZJVX85yNXJlhNhoi8qv1">
+    <mxGraphModel dx="1114" dy="1895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="z07wef2VISPtBnGf8Cru-1" value="other_functions.c" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C73500;fontColor=#000000;fillColor=#fa6800;" parent="1" vertex="1">
+          <mxGeometry x="620" y="-1169" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z07wef2VISPtBnGf8Cru-2" value="Définition et initialisation des fonctions utiles&amp;nbsp;&lt;div&gt;- putchar&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="-1070" width="220" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Page-5" id="pVAix8nx5GTGvvlOU2As">
+    <mxGraphModel dx="1114" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-1" target="AdyvdVXJeUJ4vEVUoCbz-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-1" value="Début de la fonction _printf" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="130" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-2" target="AdyvdVXJeUJ4vEVUoCbz-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-2" value="Initialiser args et count = 0" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-4" target="AdyvdVXJeUJ4vEVUoCbz-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-4" target="AdyvdVXJeUJ4vEVUoCbz-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-4" value="Boucle principale : while (format[i]&amp;nbsp;&lt;div&gt;Est ce un &#39;%&#39;&amp;nbsp; ?&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-6" target="AdyvdVXJeUJ4vEVUoCbz-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-6" value="Imprimer le caractère&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-8" target="AdyvdVXJeUJ4vEVUoCbz-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-8" value="Vérifier s&#39;il reste un caractère après le &#39;%&#39;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-10" value="Non" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-11" value="Oui" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-12" target="AdyvdVXJeUJ4vEVUoCbz-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-12" value="Incrémenter count" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="665" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-14" value="Passer à i++" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="805" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-16" target="AdyvdVXJeUJ4vEVUoCbz-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-16" target="AdyvdVXJeUJ4vEVUoCbz-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-16" value="Vérifier le spécificateur (via le tableau print_t[])" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="665" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-18" target="AdyvdVXJeUJ4vEVUoCbz-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-18" value="Spécificateur trouvé&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-20" target="AdyvdVXJeUJ4vEVUoCbz-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-20" value="Appeler la fonction associée" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-22" value="Incrémenter count et passer à i++" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-24" target="AdyvdVXJeUJ4vEVUoCbz-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-24" value="Aucun spécificateur trouvé -&amp;gt; imprimer &#39;%&#39; et le caractère suivant" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="805" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-26" target="AdyvdVXJeUJ4vEVUoCbz-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-26" value="Incrémenter count = 2 et passer à i++" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="945" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-28" target="AdyvdVXJeUJ4vEVUoCbz-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-28" value="Fin de la boucle while" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1085" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AdyvdVXJeUJ4vEVUoCbz-30" target="AdyvdVXJeUJ4vEVUoCbz-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-30" value="Retourner count" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1225" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdyvdVXJeUJ4vEVUoCbz-32" value="Fin de la fonction _printf" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1365" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sTJC58I8Xe49OCZ9-JxM-1" value="Dossier _printf" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="630" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Page-6" id="4aRbDt12MP6ONfxwNPrv">
+    <mxGraphModel dx="1393" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-1" target="5lRCd7KM_Bedsn3nLUZs-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-1" value="Fonction print un caractère (print_char)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-2" target="5lRCd7KM_Bedsn3nLUZs-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-2" value="Fonction print une chaine de caractère (print_str)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="380" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-3" target="5lRCd7KM_Bedsn3nLUZs-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-3" value="Fonction print un &#39;pourcentage&#39; (print_pourcent)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="680" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-4" target="FnhOXP3qDYzeM4vdsw6x-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-4" value="Fonction print un entier (print_int)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="930" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-5" target="5lRCd7KM_Bedsn3nLUZs-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-5" value="Récupération de l&#39;argument avec va_list" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-7" target="5lRCd7KM_Bedsn3nLUZs-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-7" value="Utilisation de la fonction _putchar pour print &#39;c&#39; (caractère)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-9" value="Retourne 1 (car un seul caractère imprimé)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-11" target="5lRCd7KM_Bedsn3nLUZs-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-11" value="Affiche le caractère &#39;%&#39;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-13" value="Retourne 1 (car un seul caractère imprimé)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-15" target="5lRCd7KM_Bedsn3nLUZs-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-15" value="Récupération de l&#39;argument (chaine de caractère) avec va_list" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-19" target="5lRCd7KM_Bedsn3nLUZs-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-19" target="5lRCd7KM_Bedsn3nLUZs-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-19" value="Est ce que s == NULL ?" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-21" target="5lRCd7KM_Bedsn3nLUZs-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-21" value="_putchar(*s)&lt;div&gt;(imprimer caractère par caractère la chaine)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="5lRCd7KM_Bedsn3nLUZs-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="540" as="sourcePoint" />
+            <mxPoint x="440" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="530" y="595" />
+              <mxPoint x="440" y="595" />
+              <mxPoint x="440" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-23" value="affichier (&quot;null&quot;)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-25" value="Non" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-26" value="Oui" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-27" target="5lRCd7KM_Bedsn3nLUZs-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-27" value="Incrémentation avec s++&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-29" target="5lRCd7KM_Bedsn3nLUZs-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-29" value="Compte le nombre de caractère avec count++" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lRCd7KM_Bedsn3nLUZs-33" target="5lRCd7KM_Bedsn3nLUZs-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-33" value="Tant que la chaîne est différente du caractère &#39;\0&#39;, on continue d&#39;incrémenter" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="900" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5lRCd7KM_Bedsn3nLUZs-35" value="Retourne count&lt;div&gt;(le nombre de caractère)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1055" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FnhOXP3qDYzeM4vdsw6x-1" target="FnhOXP3qDYzeM4vdsw6x-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-1" value="Fonction récursive&amp;nbsp;&lt;div&gt;(print_num)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FnhOXP3qDYzeM4vdsw6x-2" target="sRMMHNrd2zP3YWH3zZq_-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-2" value="Récupération de l&#39;argument (un entier) avec va_list" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FnhOXP3qDYzeM4vdsw6x-4" target="FnhOXP3qDYzeM4vdsw6x-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FnhOXP3qDYzeM4vdsw6x-4" target="FnhOXP3qDYzeM4vdsw6x-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-4" value="Si num / 10 &amp;gt; 0 ?&lt;div&gt;(Appel récursive de la fonction pour traiter les chiffres avant d&#39;imprimer le dernier)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FnhOXP3qDYzeM4vdsw6x-6" target="FnhOXP3qDYzeM4vdsw6x-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-6" value="_putchar pour afficher chaque chiffre du nombre" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1181" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-8" value="Retourne count&lt;div&gt;(le nombre de caractère)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-10" value="Non" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-11" value="Oui" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FnhOXP3qDYzeM4vdsw6x-12" value="Retourne count&lt;div&gt;(le nombre de caractère)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="1181" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sRMMHNrd2zP3YWH3zZq_-1" target="sRMMHNrd2zP3YWH3zZq_-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sRMMHNrd2zP3YWH3zZq_-1" target="sRMMHNrd2zP3YWH3zZq_-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-1" value="Est ce que num &amp;lt; 0 ?" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sRMMHNrd2zP3YWH3zZq_-3" target="sRMMHNrd2zP3YWH3zZq_-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-3" value="Appel la fonction print_num pour afficher le nombre" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sRMMHNrd2zP3YWH3zZq_-5" target="sRMMHNrd2zP3YWH3zZq_-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-5" value="Imprimer le caractère &#39;-&#39;&lt;div&gt;(_putchar(&#39;-&#39;))&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-7" value="Non" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="400" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-8" value="Oui" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="400" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-9" value="Transforme le nombre en positif pour prochain traitement&lt;div&gt;(num = -num)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-11" value="Retourne count depuis la fonction printt_num (afficher le nombre de caractère)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="860" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sRMMHNrd2zP3YWH3zZq_-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="sRMMHNrd2zP3YWH3zZq_-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="950" y="620" as="sourcePoint" />
+            <mxPoint x="920" y="620" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IooAxULl8v-RZWK67B0r-1" value="Dossier type_functions.c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
