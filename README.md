@@ -150,6 +150,11 @@ Unknown:[%r]
 Unknown:[%r]
 alex@ubuntu:~/c/printf$
 
+Flowchart :
+![image](https://github.com/user-attachments/assets/5dd283bf-736a-4411-9675-bb57e6885505)
+![image](https://github.com/user-attachments/assets/007bb92c-41fc-403f-bc3d-8d74eabae0ee)
+![image](https://github.com/user-attachments/assets/e3768d21-c728-4dbe-83ad-bf8e8272fd16)
+
 #Work in group 
 ROBLES Corentin: https://github.com/Coco29dev
 PIERRE Joséphine:https://github.com/Josephine180
